@@ -1,0 +1,2082 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* font-family: "Poppins", sans-serif;
+font-family: "Josefin Sans", sans-serif; */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::selection {
+    background-color: #000;
+    color: #fff;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background-color: #e2e2eb;
+}
+
+header {
+    height: 80px;
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 22;
+    user-select: none;
+}
+
+header .logo {
+    position: relative;
+}
+
+header .logo h1 {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+header .logo .box {
+    height: 4px;
+    width: 60px;
+    border-radius: 10px;
+    background-color: #ff0000;
+}
+
+header .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .nav ul {
+    list-style-type: none;
+}
+
+header .nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+
+header .nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 20px;
+    font-family: "Josefin Sans", sans-serif;
+    transition: all 200ms ease;
+    font-weight: 600;
+}
+
+header .nav ul li a:hover {
+    background-color: #fff;
+    color: #ff0000;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+header .nav .icon {
+    font-size: 20px;
+    border: 2px solid transparent;
+    padding: 10px;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    display: none;
+}
+
+header .nav .icon:hover {
+    background-color: transparent;
+    border-bottom: 3px solid #fff;
+    color: #ff0000;
+    padding: 10px;
+}
+
+main {
+    position: relative;
+}
+
+main .navslide {
+    display: none;
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    width: 250px;
+    background-color: #e2e2eb;
+    border-left: 2px solid #000;
+    z-index: 22;
+}
+
+main .navslide .navslide-new {
+    padding: 30px 30px 0 30px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main .navslide .navslide-new .wrong {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}
+
+main .navslide .navslide-new .wrong i {
+    font-size: 25px;
+}
+
+main .navslide .navslide-new .wrong i:active {
+    color: #ff0000;
+}
+
+main .navslide .navslide-new .nav {
+    padding: 90px 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+main .navslide .navslide-new .nav li {
+    width: 100%;
+    padding: 20px;
+}
+
+main .navslide .navslide-new .nav li a {
+    font-size: 18px;
+    text-decoration: none;
+    color: #000;
+    font-family: "Josefin Sans", sans-serif;
+    padding-bottom: 6px;
+    border-bottom: 3px solid #000;
+}
+
+main .navslide .navslide-new .nav li a:active {
+    color: #ff0000;
+    border-bottom: 3px solid #ff0000;
+}
+
+main .navslide .navslide-new .nav li a i {
+    padding-right: 10px;
+}
+
+main .navslide .navslide-new .footers {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    margin-top: -40px;
+}
+
+main .navslide .navslide-new .footers p {
+    font-size: 14px;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+main .navslide .navslide-new .footers .footers-icon {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+main .navslide .navslide-new .footers .footers-icon a {
+    text-decoration: none;
+    height: 30px;
+    width: 30px;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main .navslide .navslide-new .footers .footers-icon a i {
+    font-size: 17px;
+}
+
+.home {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    border-bottom: 2px solid #999999a2;
+}
+
+.home aside {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.home aside p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.home aside h1 {
+    font-size: 52px;
+    font-family: "Josefin Sans", sans-serif;
+    display: flex;
+}
+
+.home aside h1 b {
+    color: #ff0000;
+    width: 0ch;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid #ff0000;
+    animation: typing 5s steps(14) infinite;
+}
+
+@keyframes typing {
+    0% {
+        width: 0ch;
+    }
+
+    50% {
+        width: 75%;
+    }
+}
+
+.home aside h5 {
+    margin-top: 20px;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 1px;
+}
+
+.home aside .button {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.home aside .button button {
+    outline: none;
+    border: none;
+    padding: 14px 28px;
+    background-color: #000;
+    color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.532) 0px 19px 38px, rgba(0, 0, 0, 0.404) 0px 15px 12px;
+}
+
+.home aside .button button a {
+    text-decoration: none;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+}
+
+.profile {
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile .profile-box {
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 2px solid #999999a2;
+    width: 100%;
+    gap: 80px;
+    margin-top: 100px;
+    padding-bottom: 40px;
+}
+
+.profile .image .images {
+
+    height: 55vh;
+    width: 300px;
+    border: 8px solid #ff0000;
+    position: absolute;
+    z-index: -22;
+    margin-top: -8px;
+    margin-left: 60px;
+}
+
+.profile .image img {
+    padding: 20px 20px 0 0;
+    border-radius: 10px;
+}
+
+.profile .detail {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 24px 55px 50px 10px;
+    max-width: 340px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.profile .detail p {
+    font-size: 18px;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 600;
+}
+
+
+
+
+.section-about {
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 2px solid #999999a2;
+    margin-top: 100px;
+}
+
+.section-about-detail {
+    padding: 30px;
+    height: 90%;
+    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.section-about-detail .title {
+    margin-top: 100px;
+    font-size: 32px;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.section-about-detail .title::after {
+    content: "";
+    margin-top: 10px;
+    display: block;
+    height: 4px;
+    width: 50%;
+    border-radius: 10px;
+    background-color: #ff0000
+}
+
+.section-about-detail .para {
+    text-indent: 100px;
+    font-size: 17px;
+    font-family: "Poppins", sans-serif;
+}
+
+.section-about-detail p span {
+    color: #000;
+    font-weight: 600;
+}
+
+.section-about-detail .skill {
+    height: 100%;
+    width: 100%;
+    margin-bottom: 80px;
+}
+
+.section-about-detail .skill h1 {
+    font-size: 32px;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.section-about-detail .skill h1::after {
+    content: "";
+    margin-top: 10px;
+    display: block;
+    height: 4px;
+    width: 60px;
+    border-radius: 10px;
+    background-color: #ff0000
+}
+
+.section-about-detail .skill .skill-item {
+    margin-top: 30px;
+    margin-left: 50px;
+    width: 60%;
+}
+
+.section-about-detail .skill .skill-item .skill-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-about-detail .skill .skill-item .skill-title p {
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+    padding: 0 30px;
+}
+
+.section-about-detail .skill .skill-item .skill-title .percentage {
+    font-size: 12px;
+}
+
+.section-about-detail .skill .skill-item .skill-bar {
+    height: 10px;
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 10px;
+    border: 2px solid #000;
+    position: relative;
+}
+
+.section-about-detail .skill .skill-item .skill-bar .percentage1 {
+    height: 100%;
+    width: 90%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #000;
+    animation: percentage1 2s;
+}
+
+.section-about-detail .skill .skill-item .skill-bar .percentage2 {
+    height: 100%;
+    width: 80%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #000;
+    animation: percentage2 2s;
+}
+
+.section-about-detail .skill .skill-item .skill-bar .percentage3 {
+    height: 100%;
+    width: 60%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #000;
+    animation: percentage3 2s;
+}
+
+.section-about-detail .skill .skill-item .skill-bar .percentage4 {
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #000;
+    animation: percentage4 2s;
+}
+
+@keyframes percentage1 {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 90%;
+    }
+}
+
+@keyframes percentage2 {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 80%;
+    }
+}
+
+@keyframes percentage3 {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 60%;
+    }
+}
+
+@keyframes percentage4 {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 50%;
+    }
+}
+
+
+
+
+main .education {
+    min-height: 400px;
+    width: 100%;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    border-bottom: 2px solid #999999a2;
+}
+
+main .education .education-title {
+    margin-left: 3rem;
+}
+
+main .education .education-title h1 {
+    margin-top: 140px;
+    font-size: 32px;
+    font-family: "Josefin Sans", sans-serif;
+    margin-bottom: 10px;
+}
+
+main .education .education-title .education-bar {
+    height: 4px;
+    width: 70px;
+    background-color: #ff0000;
+    border-radius: 10px
+}
+
+main .education .education-detail {
+    margin-left: 14rem;
+    display: flex;
+    gap: 50px;
+    margin-bottom: 100px;
+}
+
+main .education .education-detail .education-line {
+    margin-top: 40px;
+    height: 500px;
+    width: 6px;
+    border-radius: 10px;
+    background-color: #000;
+    position: relative;
+}
+
+main .education .education-detail .education-line .education-dot1 {
+    position: absolute;
+    left: -7px;
+    top: -4px;
+    background-color: #000;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+}
+
+main .education .education-detail .education-line .education-dot2 {
+    position: absolute;
+    left: -7px;
+    top: 33%;
+    background-color: #000;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+}
+
+main .education .education-detail .education-line .education-dot3 {
+    position: absolute;
+    left: -7px;
+    top: 71%;
+    background-color: #000;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+}
+
+main .education .education-detail .education-line .education-dot1 span {
+    height: 12px;
+    width: 12px;
+    background-color: #fff;
+    display: flex;
+    border-radius: 50%;
+    position: absolute;
+    left: 4px;
+    top: 4px;
+}
+
+main .education .education-detail .education-line .education-dot2 span {
+    height: 12px;
+    width: 12px;
+    background-color: #ff0000;
+    display: flex;
+    border-radius: 50%;
+    position: absolute;
+    left: 4px;
+    top: 4px;
+}
+
+main .education .education-detail .education-line .education-dot3 span {
+    height: 12px;
+    width: 12px;
+    background-color: #fff;
+    display: flex;
+    border-radius: 50%;
+    position: absolute;
+    left: 4px;
+    top: 4px;
+}
+
+main .education .education-detail .education-content {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+    margin-top: 40px;
+}
+
+main .education .education-detail .education-content .education-para {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 30px;
+    width: 65%;
+}
+
+main .education .education-detail .education-content .education-para h1 {
+    font-family: "Josefin Sans", sans-serif;
+    margin-bottom: 10px;
+}
+
+main .education .education-detail .education-content .education-para p {
+    font-family: "Poppins", sans-serif;
+}
+
+main .project {
+    min-height: 400px;
+    width: 100%;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    border-bottom: 2px solid #999999a2;
+}
+
+main .project .project-title {
+    margin-left: 3rem;
+}
+
+main .project .project-title h1 {
+    margin-top: 100px;
+    font-size: 32px;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+main .project .project-title .project-bar {
+    height: 4px;
+    width: 55px;
+    border-radius: 10px;
+    background-color: #ff0000;
+}
+
+main .project .project-img {
+    margin-left: 8rem;
+    display: flex;
+    gap: 50px;
+}
+
+main .project .project-img .project-image {
+    padding: 20px;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    min-height: 100px;
+}
+
+main .project .project-img .project-image .project-name {
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    border: 2px solid #00000047;
+    padding: 10px;
+
+}
+
+main .project .project-img .project-image img {
+    margin-bottom: 12px;
+}
+
+main .project .project-img .project-image h5 {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 14px;
+}
+
+main .project .project-github {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+main .project .project-github p {
+    font-family: "Poppins", sans-serif;
+}
+
+main .project .project-github .project-button button {
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
+
+main .project .project-github .project-button {
+    margin-bottom: 30px;
+}
+
+main .project .project-github .project-button button a {
+    padding: 12px 26px;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 16px;
+    transition: .3s;
+}
+
+main .project .project-github .project-button button a:hover {
+    background-color: #fff;
+    color: #ff0000;
+    border: 2px solid #0000007a;
+}
+
+main .contact {
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 2px solid #999999a2;
+}
+
+main .contact .contact-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60vh;
+    width: 65%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border: 6px solid #ff0000;
+    margin-left: 120px;
+}
+
+main .contact .contact-content .contact-box {
+    background-color: #ff0000;
+    margin: -8px 0 0 -150px;
+    padding: 20px;
+    box-shadow: rgb(255, 0, 0) -6px 8px 8px;
+    height: 85%;
+    color: #fff;
+    width: 400px;
+}
+
+main .contact .contact-content .contact-box h1 {
+    font-family: "Josefin Sans", sans-serif;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+main .contact .contact-content .contact-box .contact-address {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 68px;
+}
+
+main .contact .contact-content .contact-box .contact-address .contact-location,
+main .contact .contact-content .contact-box .contact-address .contact-email,
+main .contact .contact-content .contact-box .contact-address .contact-phone {
+    display: flex;
+    align-items: start;
+    gap: 12px;
+    font-size: 16px;
+}
+
+main .contact .contact-content .contact-box .contact-address .contact-location p,
+main .contact .contact-content .contact-box .contact-address .contact-email p,
+main .contact .contact-content .contact-box .contact-address .contact-phone p {
+    font-family: "Poppins", sans-serif;
+    margin-top: -5px;
+}
+
+main .contact .contact-content .contact-form {
+    min-height: 300px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 40px;
+    margin-right: 80px;
+}
+
+main .contact .contact-content .contact-form h1 {
+    margin-left: -60px;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+main .contact .contact-content .contact-form .contact-form-input {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+main .contact .contact-content .contact-form .contact-form-input input {
+    all: unset;
+    border-bottom: 3px solid #000;
+    padding: 12px;
+    width: 91%;
+}
+
+main .contact .contact-content .contact-form .contact-form-input textarea {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    border: 2px solid #000;
+    width: 100%;
+    padding: 10px;
+}
+
+main .contact .contact-content .contact-form .contact-form-input .contact-button {
+    cursor: pointer;
+}
+
+main .contact .contact-content .contact-form .contact-form-input .contact-button button {
+    all: unset;
+    padding: 12px 32px;
+    background-color: #000;
+    color: #fff;
+    font-size: 19px;
+    letter-spacing: 2px;
+    font-family: "Josefin Sans", sans-serif;
+    margin-bottom: 20px;
+}
+
+main .footer {
+    height: 8vh;
+    background-color: #000;
+    color: #fff;
+}
+
+main .footer p {
+    text-align: center;
+    padding-top: 20px;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+}
+
+main .footer p::selection {
+    background-color: #fff;
+    color: #000;
+}
+
+
+
+
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+
+    header {
+        width: 100%;
+    }
+
+    main .project .project-img {
+        margin-left: 0rem;
+    }
+
+    main .project .project-img .project-image img {
+        height: 150px;
+        width: 200px;
+    }
+
+    main .project .project-github {
+        margin-bottom: 60px;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1024px) {
+
+    .home aside p {
+        font-size: 14px;
+    }
+
+    .home aside h1 {
+        font-size: 48px;
+    }
+
+    .home aside h5 {
+        font-size: 15px;
+    }
+
+    .home aside .button button {
+        padding: 12px 26px;
+    }
+
+    .profile .image .images {
+        height: 55vh;
+        width: 260px;
+        border: 8px solid #ff0000;
+        position: absolute;
+        z-index: -22;
+        margin-top: -20px;
+        margin-left: 70px;
+    }
+
+    .profile .image img {
+        height: 400px;
+        width: 300px;
+        padding: 20px 20px 0 0;
+    }
+
+    main .contact .contact-content .contact-form {
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        gap: 40px;
+        margin-right: 0px;
+    }
+
+    main .contact .contact-content .contact-form h1 {
+        margin-top: 20px;
+        font-size: 22px;
+        margin-left: -10px;
+    }
+
+    main .contact .contact-content .contact-form .contact-form-input input {
+        width: 91%;
+        font-size: 16px;
+    }
+
+    main .contact .contact-content .contact-form .contact-form-input textarea {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    main .contact .contact-content .contact-form .contact-form-input .contact-button button {
+        padding: 8px 26px;
+        font-size: 14px;
+    }
+
+    main .footer p {
+        font-size: 13px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+
+    header .logo h1 {
+        font-size: 26px;
+    }
+
+    header .nav ul li {
+        margin-right: 0;
+    }
+
+    header .nav ul li a {
+        padding: 8px;
+        font-size: 17px;
+    }
+
+    .profile .image .images {
+        height: 48vh;
+        width: 230px;
+        margin-top: -14px;
+        margin-left: 36px;
+    }
+
+
+    .profile .image img {
+        height: 350px;
+        width: 250px;
+        padding: 20px 20px 0 0;
+    }
+
+    .profile .detail {
+        padding: 19px 50px 45px 7px;
+        max-width: 340px;
+        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    }
+
+    .profile .detail p {
+        font-size: 16px;
+    }
+
+    main .contact .contact-content .contact-form {
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        gap: 40px;
+        margin-right: 0px;
+    }
+
+    main .contact .contact-content .contact-form h1 {
+        margin-top: 20px;
+        font-size: 22px;
+        margin-left: -10px;
+    }
+
+    main .contact .contact-content .contact-form .contact-form-input input {
+        width: 91%;
+        font-size: 16px;
+    }
+
+    main .contact .contact-content .contact-form .contact-form-input textarea {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+
+    main .contact .contact-content .contact-form .contact-form-input .contact-button button {
+        padding: 8px 26px;
+        font-size: 14px;
+    }
+
+    main .footer p {
+        font-size: 13px;
+    }
+
+    main .education .education-detail {
+        margin-left: 5rem;
+        margin-bottom: 100px;
+    }
+
+
+    main .education .education-detail .education-content .education-para {
+        padding: 20px;
+        width: 85%;
+    }
+
+    .profile .image .images {
+        margin-top: -14px;
+        margin-bottom: 36px;
+    }
+
+    main .project .project-img .project-image img {
+        height: 120px;
+        width: 200px;
+    }
+
+    main .contact .contact-content {
+        height: 50vh;
+        width: 50%;
+        border: 4px solid #ff0000;
+    }
+
+    main .contact .contact-content .contact-box {
+        margin: -4px 0 0 -150px;
+        height: 76%;
+        width: 250px;
+    }
+
+    main .contact .contact-content .contact-box h1 {
+        font-size: 20px;
+        margin-top: 10px;
+        margin-bottom: 0px;
+    }
+
+    main .contact .contact-content .contact-box .contact-address {
+        margin-top: 40px;
+    }
+
+    main .contact .contact-content .contact-box .contact-address .contact-location,
+    main .contact .contact-content .contact-box .contact-address .contact-email,
+    main .contact .contact-content .contact-box .contact-address .contact-phone {
+        font-size: 12px;
+    }
+
+    main .contact .contact-content .contact-form {
+        display: flex;
+        gap: 10px;
+    }
+
+    main .contact .contact-content .contact-form h1 {
+        font-size: 18px;
+        margin-top: 60px;
+    }
+
+    main .contact .contact-content .contact-form .contact-form-input input {
+        border-bottom: 2px solid #000;
+        padding: 8px;
+        width: 88%;
+        font-size: 12px;
+    }
+
+    main .contact .contact-content .contact-form .contact-form-input textarea {
+        font-size: 12px;
+        columns: 10px;
+    }
+
+    main .contact .contact-content .contact-form .contact-form-input .contact-button button {
+        padding: 8px 22px;
+        font-size: 14px;
+    }
+
+    main .footer p {
+        font-size: 10px;
+    }
+
+}
+
+@media screen and (min-width: 600px) and (max-width: 768px) {
+
+    header .logo h1 {
+        font-size: 30px;
+    }
+
+    header .nav ul {
+        display: none;
+    }
+
+    header .nav .icon {
+        display: flex;
+    }
+
+    main .home aside p {
+        font-size: 12px;
+    }
+
+    main .home aside h1 {
+        font-size: 36px;
+    }
+
+    main .home aside h5 {
+        font-size: 12px;
+    }
+
+    .home aside .button button {
+        padding: 10px 22px;
+    }
+
+    .home aside .button button a {
+        font-size: 10px;
+    }
+
+
+    .profile .image .images {
+        height: 42vh;
+        width: 200px;
+        margin-top: -14px;
+        margin-left: 66px;
+    }
+
+
+    .profile .image img {
+        height: 300px;
+        width: 200px;
+        padding: 20px 0 0 0;
+        margin-left: 30px;
+    }
+
+    .profile .detail {
+        padding: 19px 50px 45px 7px;
+        max-width: 230px;
+    }
+
+    .profile .detail p {
+        font-size: 14px;
+    }
+
+    main .section-about .section-about-detail h1 {
+        font-size: 24px;
+    }
+
+    main .section-about .section-about-detail .para {
+        font-size: 12px;
+    }
+
+    main .section-about .section-about-detail .skill .skill-title p {
+        font-size: 14px;
+    }
+
+    main .education .education-title h1 {
+        font-size: 24px;
+    }
+
+    main .education .education-detail {
+        margin-left: 100px;
+    }
+
+    main .education .education-detail .education-line {
+        margin-top: 0;
+        height: 420px;
+        width: 5px;
+    }
+
+    main .education .education-detail .education-line .education-dot1 {
+        position: absolute;
+        left: -8px;
+    }
+
+    main .education .education-detail .education-line .education-dot2 {
+        position: absolute;
+        left: -8px;
+    }
+
+    main .education .education-detail .education-line .education-dot3 {
+        position: absolute;
+        left: -8px;
+    }
+
+    main .education .education-detail .education-content {
+        margin-top: 0;
+    }
+
+    main .education .education-detail .education-content .education-para {
+        padding: 20px;
+        width: 85%;
+    }
+
+    main .education .education-detail .education-content .education-para h1 {
+        font-size: 18px;
+    }
+
+    main .education .education-detail .education-content .education-para p {
+        font-size: 12px;
+    }
+
+    main .project {
+        display: flex;
+        gap: 20px;
+    }
+
+    main .project .project-title h1 {
+        font-size: 24px;
+    }
+
+    main .project .project-img .project-image {
+        margin-left: -70px;
+    }
+
+    main .project .project-img .project-image img {
+        height: 100px;
+        width: 180px;
+    }
+
+    main .project .project-github p {
+        font-size: 14px;
+    }
+
+    main .project .project-github .project-button button a {
+        padding: 10px 24px;
+        font-size: 14px;
+    }
+
+    main .contact {
+        margin-left: 120px;
+    }
+
+    main .contact .contact-content {
+        height: 50vh;
+        width: 60%;
+        border: 4px solid #ff0000;
+        margin-left: 0px;
+    }
+
+    main .contact .contact-content .contact-box {
+        margin: -4px 0 0 -150px;
+        height: 76%;
+        width: 250px;
+    }
+
+    main .contact .contact-content .contact-box h1 {
+        font-size: 20px;
+        margin-top: 10px;
+        margin-bottom: 0px;
+    }
+
+    main .contact .contact-content .contact-box .contact-address {
+        margin-top: 40px;
+    }
+
+    main .contact .contact-content .contact-box .contact-address .contact-location,
+    main .contact .contact-content .contact-box .contact-address .contact-email,
+    main .contact .contact-content .contact-box .contact-address .contact-phone {
+        font-size: 12px;
+    }
+
+    main .contact .contact-content .contact-form {
+        display: flex;
+        gap: 10px;
+        margin-right: 0;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    main .contact .contact-content .contact-form h1 {
+        font-size: 16px;
+        margin-top: 0;
+        margin-left: 0;
+    }
+
+    main .contact .contact-content .contact-form .contact-form-input input {
+        padding: 8px;
+        width: 88%;
+        font-size: 12px;
+    }
+
+    main .contact .contact-content .contact-form .contact-form-input textarea {
+        font-size: 12px;
+        columns: 10px;
+    }
+
+    main .contact .contact-content .contact-form .contact-form-input .contact-button button {
+        padding: 8px 22px;
+        font-size: 14px;
+    }
+
+    main .footer p {
+        font-size: 10px;
+    }
+
+}
+
+@media screen and (min-width: 480px) and (max-width: 600px) {
+
+    header .logo h1 {
+        font-size: 30px;
+    }
+
+    header .nav ul {
+        display: none;
+    }
+
+    header .nav .icon {
+        display: flex;
+    }
+
+    main .home aside p {
+        font-size: 12px;
+    }
+
+    main .home aside h1 {
+        font-size: 36px;
+    }
+
+    main .home aside h5 {
+        font-size: 12px;
+    }
+
+    .home aside .button button {
+        padding: 10px 22px;
+    }
+
+    .home aside .button button a {
+        font-size: 10px;
+    }
+
+    .profile .profile-box{
+        display: block;
+        margin-top: 60px;
+    }
+
+    .profile .image {
+        margin-top: 40px;
+        margin-left: 100px;
+        margin-bottom: 40px;
+    }
+
+    .profile .image .images {
+        height: 42vh;
+        width: 200px;
+        margin-top: -14px;
+        margin-left: 66px;
+        margin-bottom: 120px;
+    }
+
+
+    .profile .image img {
+        height: 300px;
+        width: 200px;
+        padding: 20px 0 0 0;
+        margin-left: 30px;
+    }
+
+    .profile .detail {
+        padding: 19px 50px 45px 7px;
+        max-width: 230px;
+        margin-left: 120px;
+        margin-bottom: 40px;
+    }
+
+    .profile .detail p {
+        font-size: 14px;
+    }
+
+    main .section-about .section-about-detail h1 {
+        font-size: 24px;
+    }
+
+    main .section-about .section-about-detail .para {
+        font-size: 12px;
+    }
+
+    main .section-about .section-about-detail .skill .skill-title p {
+        font-size: 14px;
+    }
+
+    main .education .education-title h1 {
+        font-size: 24px;
+    }
+
+    main .education .education-detail {
+        margin-left: 50px;
+    }
+
+    main .education .education-detail .education-line {
+        margin-top: 0;
+        height: 460px;
+        width: 5px;
+    }
+
+    main .education .education-detail .education-line .education-dot1 {
+        position: absolute;
+        left: -8px;
+    }
+
+    main .education .education-detail .education-line .education-dot2 {
+        position: absolute;
+        left: -8px;
+    }
+
+    main .education .education-detail .education-line .education-dot3 {
+        position: absolute;
+        left: -8px;
+    }
+
+    main .education .education-detail .education-content {
+        margin-top: 0;
+    }
+
+    main .education .education-detail .education-content .education-para {
+        padding: 20px;
+        width: 85%;
+    }
+
+    main .education .education-detail .education-content .education-para h1 {
+        font-size: 18px;
+    }
+
+    main .education .education-detail .education-content .education-para p {
+        font-size: 12px;
+    }
+
+    main .project {
+        display: flex;
+        gap: 20px;
+    }
+
+    main .project .project-title h1 {
+        font-size: 24px;
+    }
+
+    main .project .project-img .project-image {
+        margin-left: -30px;
+    }
+
+    main .project .project-img .project-image img {
+        height: 100px;
+        width: 150px;
+    }
+
+    main .project .project-github p {
+        font-size: 14px;
+    }
+
+    main .project .project-github .project-button button a {
+        padding: 10px 24px;
+        font-size: 14px;
+    }
+
+    main .contact {
+        margin-left: 120px;
+        padding: 30px 0 30px 30px;
+    }
+
+    main .contact .contact-content {
+        height: 50vh;
+        width: 80%;
+        border: 4px solid #ff0000;
+    }
+
+    main .contact .contact-content .contact-box {
+        margin: -4px 0 0 -150px;
+        height: 76%;
+        width: 250px;
+    }
+
+    main .contact .contact-content .contact-box h1 {
+        font-size: 20px;
+        margin-top: 10px;
+        margin-bottom: 0px;
+    }
+
+    main .contact .contact-content .contact-box .contact-address {
+        margin-top: 40px;
+    }
+
+    main .contact .contact-content .contact-box .contact-address .contact-location,
+    main .contact .contact-content .contact-box .contact-address .contact-email,
+    main .contact .contact-content .contact-box .contact-address .contact-phone {
+        font-size: 12px;
+    }
+
+    main .contact .contact-content .contact-form {
+        display: flex;
+        gap: 10px;
+        margin-right: 0;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    main .contact .contact-content .contact-form h1 {
+        font-size: 16px;
+        margin-top: 0;
+        margin-left: 0;
+    }
+
+    main .contact .contact-content .contact-form .contact-form-input input {
+        padding: 8px;
+        width: 88%;
+        font-size: 12px;
+    }
+
+    main .contact .contact-content .contact-form .contact-form-input textarea {
+        font-size: 12px;
+        columns: 10px;
+    }
+
+    main .contact .contact-content .contact-form .contact-form-input .contact-button button {
+        padding: 8px 22px;
+        font-size: 14px;
+    }
+
+    main .footer p {
+        font-size: 8px;
+    }
+
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    
+    header {
+        width: 480px;
+        padding: 0 20px 0 15px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    header .logo h1 {
+        font-size: 26px;
+    }
+
+    header .nav ul {
+        display: none;
+    }
+
+    header .nav .icon {
+        display: flex;
+    }
+
+    header .nav .icon i {
+        font-size: 18px;
+        margin-left: -80px;
+    }
+
+    main .home aside p {
+        font-size: 10px;
+    }
+
+    main .home aside h1 {
+        font-size: 30px;
+    }
+
+    main .home aside h5 {
+        font-size: 10px;
+    }
+
+    .home aside .button button {
+        padding: 8px 18px;
+    }
+
+    .home aside .button button a {
+        font-size: 8px;
+    }
+
+    .profile .profile-box{
+        display: block;
+        margin-top: 60px;
+        margin-left: 80px;
+    }
+
+    .profile .image {
+        margin-top: 40px;
+        margin-left: 0px;
+        margin-bottom: 40px;
+    }
+
+    .profile .image .images {
+        height: 42vh;
+        width: 200px;
+        margin-top: -14px;
+        margin-left: 66px;
+        margin-bottom: 120px;
+    }
+
+
+    .profile .image img {
+        height: 300px;
+        width: 200px;
+        padding: 20px 0 0 0;
+        margin-left: 30px;
+    }
+
+    .profile .detail {
+        padding: 19px 50px 45px 7px;
+        max-width: 230px;
+        margin-left: 50px;
+        margin-bottom: 40px;
+    }
+
+    .profile .detail p {
+        font-size: 14px;
+    }
+
+    main .section-about .section-about-detail h1 {
+        font-size: 22px;
+    }
+
+    main .section-about .section-about-detail .para {
+        font-size: 10px;
+        text-align: justify;
+    }
+
+    main .section-about .section-about-detail .skill .skill-title p {
+        font-size: 14px;
+        padding: 0;
+    }
+
+    main .education .education-title {
+        margin-left: 30px;
+    }
+    
+    main .education .education-title h1 {
+        font-size: 24px;
+    }
+
+    main .education .education-detail {
+        margin-left: 30px;
+    }
+
+    main .education .education-detail .education-line {
+        margin-top: 0;
+        height: 460px;
+        width: 5px;
+    }
+
+    main .education .education-detail .education-line .education-dot1 {
+        position: absolute;
+        left: -8px;
+    }
+
+    main .education .education-detail .education-line .education-dot2 {
+        position: absolute;
+        left: -8px;
+    }
+
+    main .education .education-detail .education-line .education-dot3 {
+        position: absolute;
+        left: -8px;
+    }
+
+    main .education .education-detail .education-content {
+        margin-left: -20px;
+        margin-top: 0;
+        width: 370px;
+    }
+
+    main .education .education-detail .education-content .education-para {
+        padding: 20px;
+        width: 85%;
+
+    }
+
+    main .education .education-detail .education-content .education-para h1 {
+        font-size: 14px;
+    }
+
+    main .education .education-detail .education-content .education-para p {
+        font-size: 10px;
+    }
+
+    main .project {
+        display: flex;
+        gap: 20px;
+    }
+
+    main .project .project-title {
+        margin-left: 30px;
+    }
+
+    main .project .project-title h1 {
+        font-size: 24px;
+    }
+
+    main .project .project-img .project-image {
+        margin-left: -30px;
+    }
+
+    main .project .project-img .project-image img {
+        height: 100px;
+        width: 200px;
+    }
+
+    main .project .project-github p {
+        font-size: 12px;
+    }
+
+    main .project .project-github .project-button button a {
+        padding: 10px 22px;
+        font-size: 12px;
+    }
+
+    main .contact {
+        margin-left: 0;
+        padding: 30px 30px 30px 30px;
+    }
+
+    main .contact .contact-content {
+        display: block;
+        height: 100%;
+        width: 100%;
+        border: 4px solid #ff0000;
+        margin-left: 0;
+    }
+
+    main .contact .contact-content .contact-box {
+        margin: 0 0 0 0px;
+        height: 100%;
+        width: 100%;
+        box-shadow: none;
+    }
+
+    main .contact .contact-content .contact-box h1 {
+        font-size: 20px;
+        margin-top: 10px;
+        margin-bottom: 0px;
+    }
+
+    main .contact .contact-content .contact-box .contact-address {
+        margin-top: 40px;
+    }
+
+    main .contact .contact-content .contact-box .contact-address .contact-location,
+    main .contact .contact-content .contact-box .contact-address .contact-email,
+    main .contact .contact-content .contact-box .contact-address .contact-phone {
+        font-size: 12px;
+    }
+
+    main .contact .contact-content .contact-form {
+        display: flex;
+        gap: 10px;
+        margin-right: 0;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    main .contact .contact-content .contact-form h1 {
+        font-size: 16px;
+        margin-top: 0;
+        margin-left: 0;
+    }
+
+    main .contact .contact-content .contact-form .contact-form-input input {
+        padding: 8px;
+        width: 88%;
+        font-size: 12px;
+    }
+
+    main .contact .contact-content .contact-form .contact-form-input textarea {
+        font-size: 12px;
+        columns: 10px;
+    }
+
+    main .contact .contact-content .contact-form .contact-form-input .contact-button button {
+        padding: 8px 22px;
+        font-size: 14px;
+        margin-top: 20px;
+    }
+
+    main .footer p {
+        font-size: 10px;
+    }
+
+}
+
+@media screen and (max-width: 320px) {
+    
+    header {
+        padding: 0 10px 0 15px;
+        width: 320px;
+    }
+
+    header .logo h1 {
+        font-size: 20px;
+    }
+
+    header .nav ul {
+        display: none;
+    }
+
+    header .nav .icon {
+        display: flex;
+    }
+
+    header .nav .icon i {
+        font-size: 14px;
+    }
+
+    main .home aside p {
+        font-size: 10px;
+    }
+
+    main .home aside h1 {
+        font-size: 30px;
+    }
+
+    main .home aside h5 {
+        font-size: 10px;
+    }
+
+    .home aside .button button {
+        padding: 8px 18px;
+    }
+
+    .home aside .button button a {
+        font-size: 8px;
+    }
+
+    .profile .profile-box{
+        display: block;
+        margin-top: 60px;
+        margin-left: 30px;
+    }
+
+    .profile .image {
+        margin-top: 40px;
+        margin-left: 10px;
+        margin-bottom: 40px;
+    }
+
+    .profile .image .images {
+        height: 42vh;
+        width: 200px;
+        margin-top: -14px;
+        margin-left: 30px;
+        margin-bottom: 120px;
+    }
+
+
+    .profile .image img {
+        height: 300px;
+        width: 200px;
+        padding: 20px 0 0 0;
+        margin-left: -5px;
+    }
+
+    .profile .detail {
+        padding: 19px 50px 45px 7px;
+        max-width: 230px;
+        margin-left: 10px;
+        margin-bottom: 40px;
+    }
+
+    .profile .detail p {
+        font-size: 14px;
+    }
+
+    main .section-about .section-about-detail h1 {
+        font-size: 22px;
+    }
+
+    main .section-about .section-about-detail .para {
+        font-size: 10px;
+        text-align: justify;
+    }
+
+    main .section-about .section-about-detail .skill .skill-title p {
+        font-size: 14px;
+        padding: 0;
+    }
+
+    main .education .education-title {
+        margin-left: 30px;
+    }
+    
+    main .education .education-title h1 {
+        font-size: 24px;
+    }
+
+    main .education .education-detail {
+        margin-left: 30px;
+    }
+
+    main .education .education-detail .education-line {
+        margin-top: 0;
+        height: 460px;
+        width: 5px;
+    }
+
+    main .education .education-detail .education-line .education-dot1 {
+        position: absolute;
+        left: -8px;
+    }
+
+    main .education .education-detail .education-line .education-dot2 {
+        position: absolute;
+        left: -8px;
+    }
+
+    main .education .education-detail .education-line .education-dot3 {
+        position: absolute;
+        left: -8px;
+    }
+
+    main .education .education-detail .education-content {
+        margin-left: -20px;
+        margin-top: 0;
+        width: 240px;
+    }
+
+    main .education .education-detail .education-content .education-para {
+        padding: 20px;
+        width: 75%;
+
+    }
+
+    main .education .education-detail .education-content .education-para h1 {
+        font-size: 14px;
+    }
+
+    main .education .education-detail .education-content .education-para p {
+        font-size: 10px;
+    }
+
+    main .project {
+        display: flex;
+        gap: 20px;
+    }
+
+    main .project .project-title {
+        margin-left: 30px;
+    }
+
+    main .project .project-title h1 {
+        font-size: 24px;
+    }
+
+    main .project .project-img .project-image {
+        margin-left: -100px;
+    }
+
+    main .project .project-img .project-image img {
+        height: 100px;
+        width: 200px;
+    }
+
+    main .project .project-github p {
+        font-size: 12px;
+    }
+
+    main .project .project-github .project-button button a {
+        padding: 10px 22px;
+        font-size: 12px;
+    }
+
+    main .contact {
+        margin-left: 0;
+        padding: 30px 30px 30px 30px;
+    }
+
+    main .contact .contact-content {
+        display: block;
+        height: 100%;
+        width: 100%;
+        border: 4px solid #ff0000;
+        margin-left: 0;
+    }
+
+    main .contact .contact-content .contact-box {
+        margin: 0 0 0 0px;
+        height: 100%;
+        width: 252px;
+        box-shadow: none;
+    }
+
+    main .contact .contact-content .contact-box h1 {
+        font-size: 20px;
+        margin-top: 10px;
+        margin-bottom: 0px;
+    }
+
+    main .contact .contact-content .contact-box .contact-address {
+        margin-top: 40px;
+    }
+
+    main .contact .contact-content .contact-box .contact-address .contact-location,
+    main .contact .contact-content .contact-box .contact-address .contact-email,
+    main .contact .contact-content .contact-box .contact-address .contact-phone {
+        font-size: 12px;
+    }
+
+    main .contact .contact-content .contact-form {
+        display: flex;
+        gap: 10px;
+        margin-right: 0;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    main .contact .contact-content .contact-form h1 {
+        font-size: 16px;
+        margin-top: 0;
+        margin-left: 0;
+    }
+
+    main .contact .contact-content .contact-form .contact-form-input input {
+        padding: 8px;
+        width: 88%;
+        font-size: 12px;
+    }
+
+    main .contact .contact-content .contact-form .contact-form-input textarea {
+        font-size: 12px;
+        columns: 10px;
+    }
+
+    main .contact .contact-content .contact-form .contact-form-input .contact-button button {
+        padding: 8px 22px;
+        font-size: 14px;
+        margin-top: 20px;
+    }
+
+    main .footer p {
+        font-size: 8px;
+    }
+
+}
